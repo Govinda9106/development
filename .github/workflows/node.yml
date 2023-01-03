@@ -4,7 +4,7 @@ on:
     braches: [ master ]
   pull_request:
     braches: [ master ]
-job:
+jobs:
   build:
     runs-on: windows-latest
     steps:
