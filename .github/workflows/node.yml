@@ -1,0 +1,15 @@
+name: Node Security Example
+on:
+  push:
+    braches: [ master ]
+  pull_request:
+    braches: [ master ]
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '16'
+      - run: npm install
