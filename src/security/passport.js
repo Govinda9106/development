@@ -6,7 +6,6 @@ const { Strategy } = require('passport-google-oauth20');
 
 
 async function verifyCallBack(accessToken, refreshToken, profile, done) {
-    //await addUser(profile)
     done(null,profile)
 };
 
