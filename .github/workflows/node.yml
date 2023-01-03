@@ -2,8 +2,6 @@ name: Node Security Example
 on:
   push:
     braches: [ master ]
-  pull_request:
-    braches: [ master ]
 jobs:
   build:
     runs-on: windows-latest
