@@ -6,10 +6,9 @@
 
 //tell me 
 //how are you
-//sbvhkbs
-//kbfkjbzd
-//kjfzvjbd
 //lbkgbk
 //laenrl
 //aekrbgk
-//russia
+//sbvhkbs
+//kbfkjbzd
+//kjfzvjbd
