@@ -9,6 +9,6 @@ function checkLoggedIn(req, res, next) {
     }
     next()
 };
-//adding comment
+
 
 module.exports = checkLoggedIn;
