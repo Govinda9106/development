@@ -11,6 +11,7 @@ async function verifyCallBack(accessToken, refreshToken, profile, done) {
 
 
 //To save user to the session data
+//TO save
 passport.serializeUser((user, done) => {
     console.log('User Serialize', user);
     done(null, user.id)
