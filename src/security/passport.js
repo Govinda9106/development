@@ -11,7 +11,7 @@ async function verifyCallBack(accessToken, refreshToken, profile, done) {
 
 
 //govinda
-//serialize user
+//user
 passport.serializeUser((user, done) => {
     console.log('User Serialize', user);
     done(null, user.id)
