@@ -6,28 +6,28 @@ const passport = require('passport');
 
 
 router.get('/auth/google', passport.authenticate('google', {
-    scope: ['email']
+	scope: ['email']
 }));
 
 
 router.get('/auth/google/callback', passport.authenticate('google', {
-    failureRedirect: '/failure',
-    successRedirect: '/',
-    session: true
-}));
+	failureRedirect: '/failure',
+	successRedirect: '/',
+	session: true
+}), (req, res)=>{console.log(req.user);});
 
 
 router.get('/failure', (req, res) => {
-    res.json({
-        error: 'Failed to Authenticate'
-    })
+	res.json({
+		error: 'Failed to Authenticate'
+	});
 });
 
 router.get('/auth/logout', (req, res) => {
-    req.logOut();
-    return res.redirect('/');
+	req.logOut();
+	return res.redirect('/');
 });
 
 router.post('/auth/verify', verifyUser);
 
-module.exports = router
+module.exports = router;
