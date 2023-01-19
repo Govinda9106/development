@@ -1,3 +1,2 @@
 console.log("hello rahul");
-//my nameis boonmax schoolgit\
-//INdia 
+//my nameis boonmax schoolgit 
