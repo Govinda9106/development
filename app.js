@@ -12,14 +12,14 @@ app.use(express.json());
 app.use(helmet());
 
 app.use(cookieSession({
-    name: 'session',
-    maxAge: 24*60*60*1000,
-    keys: [ 'secret key' ]
+	name: 'session',
+	maxAge: 24*60*60*1000,
+	keys: [ 'secret key' ]
 }));
 
 
 app.get('/', (req, res)=>{
-    res.sendFile(path.join(__dirname,'public', 'index.html'));
+	res.sendFile(path.join(__dirname,'public', 'index.html'));
 });
 
 app.use(passport.initialize());
